@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title>clear-service-workers</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// https://love2dev.com/blog/how-to-uninstall-a-service-worker/
+		navigator.serviceWorker.getRegistrations().then( function(registrations) { for(let registration of registrations) { registration.unregister(); } });
+	</script>
+</body>
+</html>
